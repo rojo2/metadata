@@ -52,7 +52,7 @@ function getMetaData($) {
       , robots = $('meta[name="robots"]').attr('content')
       , copyright = $('meta[name="copyright"]').attr('content')
   if (author || keywords || description || generator || applicationName || viewport || robots || copyright) {
-    return { keywords, description, generator, applicationName, viewport, robots, copyright }
+    return { author, keywords, description, generator, applicationName, viewport, robots, copyright }
   }
   return null
 }
@@ -211,8 +211,8 @@ function getOpenGraphData($) {
       , description = $('meta[property="og:description"]').attr('content')
       , image = $('meta[property="og:image"]').attr('content')
       , type = $('meta[property="og:type"]').attr('content')
-  if (url || image || description || image || type) {
-    return { url, image, description, image, type }
+  if (url || title || description || image || type) {
+    return { url, title, description, image, type }
   }
   return null
 }
@@ -293,5 +293,22 @@ async function get(url, options = {}) {
 }
 
 module.exports = {
+  getCanonicalURL,
+  getPreviousURL,
+  getNextURL,
+  getTitle,
+  getMetaData,
+  getTwitterCreatorData,
+  getTwitterSiteData,
+  getTwitterImageData,
+  getTwitterPlayerData,
+  getTwitterAppIPhoneData,
+  getTwitterAppIPadData,
+  getTwitterAppGooglePlayData,
+  getTwitterAppData,
+  getTwitterData,
+  getOpenGraphData,
+  getLinkedData,
+  getUserAgent,
   get 
 }
