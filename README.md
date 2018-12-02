@@ -32,11 +32,11 @@ $ npm test
 
 ## TODO 
 
-[ ] Add more tests/better code coverage
-[ ] Add better open graph parsing (right now it only extracts type, image, title, description and url)
-[ ] Add more user agents (or make an optional parameter to pass your own user agent)
-[ ] Add more serverless services?
-[ ] Add dockerized version?
+- [ ] Add more tests/better code coverage
+- [ ] Add better open graph parsing (right now it only extracts type, image, title, description and url)
+- [ ] Add more user agents (or make an optional parameter to pass your own user agent)
+- [ ] Add more serverless services?
+- [ ] Add dockerized version?
 
 ## Contributors
 
