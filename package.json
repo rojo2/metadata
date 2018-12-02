@@ -3,18 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "11.2.0"
+  },
   "bin": {
     "metadata": "cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node api.js",
+    "test": "mocha --require chai/register-expected --require chai-as-promised 'test/**/*.js' --exit"
   },
   "keywords": [],
   "author": "ROJO 2 <hola@rojo2.com>",
   "license": "ISC",
   "dependencies": {
+    "@koa/cors": "^2.2.2",
     "axios": "^0.18.0",
-    "cheerio": "^1.0.0-rc.2"
+    "cheerio": "^1.0.0-rc.2",
+    "koa": "^2.6.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
