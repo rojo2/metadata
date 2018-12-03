@@ -5,13 +5,20 @@
 
 Extracts OpenGraph data, linked data and metadata from web pages in a very easy way.
 
-## Using it as a library
+## Using it as a module
 
 ```javascript
-import metadata from 'metadata';
+import metadata from '@rojo2/metadata';
 
 const pageMetadata = await metadata.get('https://<product url>')
 console.log(pageMetadata)
+```
+
+## Using it as a CLI
+
+```sh
+$ npm i -g @rojo2/metadata
+$ metadata <url>
 ```
 
 ## Using it as a serverless API
