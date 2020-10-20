@@ -1,6 +1,6 @@
 const Koa = require('koa')
 const cors = require('@koa/cors')
-const metadata = require('./index')
+const metadata = require('../dist/metadata')
 const app = new Koa()
 
 app.use(cors({
@@ -24,4 +24,4 @@ app.use(async ctx => {
   }
 })
 
-module.exports = app.callback() 
+module.exports = app.callback()

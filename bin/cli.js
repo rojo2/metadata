@@ -1,4 +1,4 @@
-const metadata = require('@rojo2/metadata')
+const metadata = require('../dist/metadata')
 
 const [,,url, agent] = process.argv
 if (!url) {
