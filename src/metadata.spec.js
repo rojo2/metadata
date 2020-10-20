@@ -1,5 +1,5 @@
-const cheerio = require('cheerio')
-const metadata = require('../index.js')
+import cheerio from 'cheerio'
+import metadata from './metadata'
 
 describe('Metadata', () => {
   it('should extract canonical URL', () => {
@@ -49,6 +49,6 @@ describe('Metadata', () => {
     })
   })
   it('should extract twitter data', () => {
-
+    // TODO: 
   })
 })

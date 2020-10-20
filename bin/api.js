@@ -22,7 +22,6 @@ app.use(async ctx => {
       }
     }
   }
-  
 })
 
 module.exports = app.callback() 
